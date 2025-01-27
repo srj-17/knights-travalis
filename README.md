@@ -14,7 +14,7 @@ instead of vertices alone in the queue.
 
 The algorithm goes as follows (roughly):
 
-- Start by queueing `[start]`, which representing the starting path
+- Start by queueing `[start]`, which represents the starting path
 - While the queue is not empty,
     - Dequeue the first path from the queue.
     - Find the last vertex in the path `current = path.at(-1)`
