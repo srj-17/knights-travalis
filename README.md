@@ -14,7 +14,7 @@ instead of vertices alone in the queue.
 
 The algorithm goes as follows (roughly):
 
-- Start by queueing `[start]`, which represents the starting path
+- Start by enqueueing `[start]`, which represents the starting path
 - While the queue is not empty,
     - Dequeue the first path from the queue.
     - Find the last vertex in the path `current = path.at(-1)`
@@ -22,7 +22,7 @@ The algorithm goes as follows (roughly):
           we visited in this path)
     - If this `current` vertex is our destination, return the `path`
     - If `current` is not visited yet,
-        - For each adjacent vertex to the current vertex
+        - For each vertex adjacent to the current vertex
             - Create a `new_path` ,where `new_path = path + adjacent_vertex`
             - Enqueue that `new_path` to the queue
             - Set `current` to `visited`
